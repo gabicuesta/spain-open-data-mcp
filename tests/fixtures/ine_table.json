@@ -1,0 +1,13 @@
+[
+  {"COD": "IPC251852", "Nombre": "Nacional. Índice general. Índice. ", "FK_Unidad": 133, "FK_Escala": 1,
+   "Notas": [{"texto": "Base 2021", "Fk_TipoNota": 1, "textoTipo": null}],
+   "Data": [
+     {"Fecha": 1756677600000, "FK_TipoDato": 1, "FK_Periodo": 9, "Anyo": 2025, "Valor": 118.2, "Secreto": false},
+     {"Fecha": 1754000000000, "FK_TipoDato": 1, "FK_Periodo": 8, "Anyo": 2025, "Valor": 118.0, "Secreto": false}
+   ]},
+  {"COD": "IPC251855", "Nombre": "Nacional. Índice general. Variación anual. ", "FK_Unidad": 135, "FK_Escala": 1,
+   "Data": [
+     {"Fecha": 1756677600000, "FK_TipoDato": 1, "FK_Periodo": 9, "Anyo": 2025, "Valor": 3.0, "Secreto": false},
+     {"Fecha": 1754000000000, "FK_TipoDato": 1, "FK_Periodo": 8, "Anyo": 2025, "Valor": null, "Secreto": true}
+   ]}
+]

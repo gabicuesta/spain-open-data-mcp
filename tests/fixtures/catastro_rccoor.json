@@ -1,0 +1,6 @@
+{"Consulta_RCCOORResult": {
+  "control": {"cucoor": 1, "cuerr": 0},
+  "coordenadas": {"coord": [{
+    "pc": {"pc1": "0847106", "pc2": "VK4704F"},
+    "geo": {"xcen": "-3.70379", "ycen": "40.41678", "srs": "EPSG:4326"},
+    "ldt": "PZ PUERTA DEL SOL 1 MADRID (MADRID)"}]}}}

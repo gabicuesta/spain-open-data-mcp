@@ -1,0 +1,10 @@
+{"Consulta_RCCOOR_DistanciaResult": {
+  "control": {"cucoor": 3, "cuerr": 0},
+  "coordenadas_distancias": {"coordd": [{"lpcd": {"pcd": [
+    {"pc": {"pc1": "0848301", "pc2": "VK4704F"}, "geo": {"xcen": "-3.70333", "ycen": "40.41702", "srs": "EPSG:4326"},
+     "ldt": "PZ PUERTA DEL SOL 7 MADRID (MADRID)", "dis": "41.2"},
+    {"pc": {"pc1": "0847101", "pc2": "VK4704F"}, "geo": {"xcen": "-3.70411", "ycen": "40.41651", "srs": "EPSG:4326"},
+     "ldt": "PZ PUERTA DEL SOL 1 MADRID (MADRID)", "dis": "18.7"},
+    {"pc": {"pc1": "0847101", "pc2": "VK4704F"}, "geo": {"xcen": "-3.70411", "ycen": "40.41651", "srs": "EPSG:4326"},
+     "ldt": "PZ PUERTA DEL SOL 1 MADRID (MADRID)", "dis": "25.0"}
+  ]}}]}}}

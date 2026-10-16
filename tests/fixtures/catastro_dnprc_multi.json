@@ -1,0 +1,6 @@
+{"consulta_dnprcResult": {
+  "control": {"cudnp": 2},
+  "lrcdnp": {"rcdnp": [
+    {"rc": {"pc1": "9872023", "pc2": "VH5797S", "car": "0001", "cc1": "W", "cc2": "X"}, "dt": {}},
+    {"rc": {"pc1": "9872023", "pc2": "VH5797S", "car": "0002", "cc1": "E", "cc2": "M"}, "dt": {}}
+  ]}}}

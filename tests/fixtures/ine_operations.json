@@ -1,0 +1,6 @@
+[
+  {"Id": 4, "Cod_IOE": "30147", "Nombre": "Estadística de Efectos de Comercio Impagados", "Codigo": "EI"},
+  {"Id": 25, "Cod_IOE": "30138", "Nombre": "Índice de Precios de Consumo (IPC)", "Codigo": "IPC", "Url": "https://www.ine.es/dyngs/IOE/es/operacion.htm?numinv=30138"},
+  {"Id": 15, "Cod_IOE": "30457", "Nombre": "Índice de Precios de Vivienda (IPV)", "Codigo": "IPV"},
+  {"Id": 33, "Cod_IOE": "", "Nombre": "Índices de Costes del Sector de la Construcción", "Codigo": "ICC"}
+]

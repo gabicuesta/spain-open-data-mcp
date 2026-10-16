@@ -1,0 +1,29 @@
+{
+  "status": {"code": "200", "text": "ok"},
+  "data": {"sumario": {
+    "metadatos": {"publicacion": "BOE", "fecha_publicacion": "20261015"},
+    "diario": [{
+      "numero": "248",
+      "sumario_diario": {"identificador": "BOE-S-2026-248", "url_pdf": {"szBytes": "1", "texto": "https://www.boe.es/boe/dias/2026/10/15/pdfs/BOE-S-2026-248.pdf"}},
+      "seccion": [
+        {"codigo": "1", "nombre": "I. Disposiciones generales",
+         "departamento": [
+           {"codigo": "7723", "nombre": "MINISTERIO DE VIVIENDA Y AGENDA URBANA",
+            "epigrafe": [{"nombre": "Vivienda",
+              "item": {"identificador": "BOE-A-2026-20001", "control": "2026/1",
+                       "titulo": "Real Decreto por el que se regula el Plan Estatal de acceso a la Vivienda.",
+                       "url_pdf": {"szBytes": "1", "texto": "https://www.boe.es/boe/dias/2026/10/15/pdfs/BOE-A-2026-20001.pdf"},
+                       "url_html": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-20001"}}]}
+         ]},
+        {"codigo": "2A", "nombre": "II. Autoridades y personal. - A. Nombramientos, situaciones e incidencias",
+         "departamento": {"codigo": "1", "nombre": "MINISTERIO DE HACIENDA",
+            "item": [
+              {"identificador": "BOE-A-2026-20002", "titulo": "Resolución por la que se nombra personal funcionario.",
+               "url_pdf": {"texto": "https://www.boe.es/x.pdf"}, "url_html": "https://www.boe.es/x"},
+              {"identificador": "BOE-A-2026-20003", "titulo": "Orden sobre la gestión catastral de inmuebles.",
+               "url_pdf": {"texto": "https://www.boe.es/y.pdf"}, "url_html": "https://www.boe.es/y"}
+            ]}}
+      ]
+    }]
+  }}
+}
