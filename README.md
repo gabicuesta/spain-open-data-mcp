@@ -18,6 +18,12 @@ Ask your assistant things like:
 
 The model picks the right tools, chains them and cites the source of every figure.
 
+<p align="center">
+  <img src="docs/demo.png" width="620"
+       alt="Claude Desktop answering a question that combines Catastro, INE and BOE data through this server">
+  <br><sub>One question in Claude Desktop: 12 tool calls across Catastro, INE and BOE, with sources.</sub>
+</p>
+
 ## Why this exists
 
 Spanish public data is excellent but scattered across three very different APIs: INE's JSON, the BOE's XML-shaped JSON and Catastro's legacy web services. Each one has its own conventions, casing and error formats. An agent that talks to them directly wastes tokens on parsing and gets things wrong.
