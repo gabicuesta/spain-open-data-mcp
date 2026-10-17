@@ -3,9 +3,9 @@
 from __future__ import annotations
 
 import argparse
-from datetime import date, datetime
+from datetime import UTC, date, datetime
 from typing import Annotated
-from zoneinfo import ZoneInfo
+from zoneinfo import ZoneInfo, ZoneInfoNotFoundError
 
 from mcp.server.mcpserver import MCPServer
 from mcp.server.mcpserver.exceptions import ToolError
@@ -15,7 +15,15 @@ from pydantic import Field
 from . import __version__, boe, catastro, ine
 from .http import JsonFetcher, UpstreamError, build_client
 
-MADRID = ZoneInfo("Europe/Madrid")
+
+def _madrid_today() -> date:
+    """Today's date in Spain. Windows has no system time zone database: the `tzdata`
+    dependency provides it, and if it's missing we fall back to UTC instead of crashing."""
+    try:
+        return datetime.now(ZoneInfo("Europe/Madrid")).date()
+    except ZoneInfoNotFoundError:
+        return datetime.now(UTC).date()
+
 
 # Every tool only reads public data from services we don't control.
 READ_ONLY = ToolAnnotations(read_only_hint=True, open_world_hint=True, idempotent_hint=True)
@@ -99,7 +107,7 @@ def build_server(fetcher: JsonFetcher | None = None) -> MCPServer:
     ) -> boe.BoeSummary:
         """List what the BOE published on a given day, with links to HTML and PDF."""
         try:
-            target = date.fromisoformat(day) if day else datetime.now(MADRID).date()
+            target = date.fromisoformat(day) if day else _madrid_today()
         except ValueError as exc:
             raise ToolError("`day` must be in YYYY-MM-DD format.") from exc
         return await guarded(boe.daily_summary(fetcher, target, query, section, limit))

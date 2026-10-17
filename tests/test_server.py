@@ -52,3 +52,13 @@ async def test_prompt_is_available(make_fetcher):
     async with Client(build_server(make_fetcher())) as client:
         prompts = (await client.list_prompts()).prompts
         assert [p.name for p in prompts] == ["property_report"]
+
+
+def test_today_falls_back_when_no_timezone_database(monkeypatch):
+    from spain_open_data_mcp import server
+
+    def missing(_key):
+        raise server.ZoneInfoNotFoundError("no tzdata")
+
+    monkeypatch.setattr(server, "ZoneInfo", missing)
+    assert server._madrid_today()  # no crash, e.g. on Windows without tzdata
